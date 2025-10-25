@@ -1,0 +1,144 @@
+.address-section.mobile {
+    background: white;
+    width: 100%;
+    border-top: 2px solid #f0f0f0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+}
+
+.address-section.mobile .address-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+}
+
+.address-section.mobile .address-inputs-container {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    margin-bottom: 1rem;
+    max-height: 50vh;
+}
+
+.address-section.mobile .address-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: min-content;
+}
+
+/* Десктоп версия */
+.address-section.desktop {
+    background: white;
+    width: 400px;
+    min-width: 400px;
+    border-left: 2px solid #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.address-section.desktop .address-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+    height: 100%;
+}
+
+.address-section.desktop .address-inputs-container {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    margin-bottom: 1.5rem;
+}
+
+.address-section.desktop .address-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: min-content;
+}
+
+/* Общие стили */
+.address-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    flex-shrink: 0;
+}
+
+.address-header h2 {
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.add-address-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.add-address-btn:hover {
+    background: #5a6fd8;
+    transform: translateY(-1px);
+}
+
+.calculate-route-btn {
+    width: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+    margin-top: auto;
+}
+
+.calculate-route-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+/* Стили для скроллбара */
+.address-inputs-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.address-inputs-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.address-inputs-container::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.address-inputs-container::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Для Firefox */
+.address-inputs-container {
+    scrollbar-width: thin;
+    scrollbar-color: #c1c1c1 #f1f1f1;
+}

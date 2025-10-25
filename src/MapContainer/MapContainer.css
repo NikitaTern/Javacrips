@@ -1,0 +1,65 @@
+.map-container-desktop {
+    display: none;
+}
+
+/* Мобильная версия карты */
+.map-container-mobile {
+    width: 100%;
+    height: 60vh; /* Фиксированная высота на мобильных */
+    background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1976d2;
+    font-weight: 500;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.map-overlay {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+}
+
+.current-location-btn {
+    background: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.current-location-btn:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Десктоп версия */
+@media (min-width: 768px) {
+    .map-container-mobile {
+        display: none;
+    }
+
+    .map-container-desktop {
+        display: block;
+        flex: 1; /* Занимает все доступное пространство */
+        height: 100%;
+        background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #1976d2;
+        font-weight: 500;
+        position: relative;
+    }
+
+    .current-location-btn {
+        font-size: 1rem;
+        padding: 0.85rem 1.5rem;
+    }
+}

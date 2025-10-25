@@ -1,17 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from "./Header.jsx";
+import React from 'react';
+import Header from './Header/Header';
+import MapContainer from './MapContainer/MapContainer';
+import AddressSection from './AddressSection/AddressSection';
+import Footer from './Footer/Footer';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+    return (
+        <div className="app">
+            <Header />
 
-  return (
-    <>
-      <Header />
-    </>
-  )
-}
+            {/* Мобильная версия - показывается только на mobile */}
+            <div className="app-mobile">
+                <MapContainer isMobile={true} />
+                <AddressSection isMobile={true} />
+            </div>
 
-export default App
+            {/* Десктоп версия - показывается только на desktop */}
+            <div className="app-desktop">
+                <MapContainer isMobile={false} />
+                <AddressSection isMobile={false} />
+            </div>
+
+            <Footer />
+        </div>
+    );
+};
+
+export default App;
