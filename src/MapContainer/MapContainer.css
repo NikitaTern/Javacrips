@@ -65,3 +65,69 @@
         padding: 0.85rem 1.5rem;
     }
 }
+
+#container {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0078FF;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.controls button:disabled {
+  background: #f2f2f2;
+  color: #6e6d6d;
+  cursor: not-allowed;
+}
+.two-gis-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+}
+
+.reset-button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #0078FF;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.reset-button:disabled {
+  background: #f2f2f2;
+  color: #6e6d6d;
+  cursor: not-allowed;
+}
