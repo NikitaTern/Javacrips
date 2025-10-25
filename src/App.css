@@ -10,7 +10,8 @@
   display: flex;
   flex-direction: column;
   flex: 1;
-  overflow: hidden;
+  overflow: visible;
+  overflow-x: hidden;
 }
 
 /* Десктоп версия скрыта по умолчанию */

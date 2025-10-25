@@ -1,5 +1,6 @@
 .map-container-desktop {
     display: none;
+    border-radius: 3%;
 }
 
 /* Мобильная версия карты */
@@ -14,6 +15,7 @@
     font-weight: 500;
     position: relative;
     flex-shrink: 0;
+
 }
 
 .map-overlay {
